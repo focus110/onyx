@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container text-primary text-center space-y-0 md:space-y-2 items-center">
         <Navbar />
         <img
-          className="absolute w-[75px] sm:w-[241px] top-[440px] md:top-[530px] left-4 sm:left-0"
+          className="absolute w-[75px] sm:w-[241px] top-[440px] md:top-[530px] left-4 sm:left-52"
           src={vector190}
           alt="vector shape"
         />
