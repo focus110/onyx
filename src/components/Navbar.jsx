@@ -1,12 +1,14 @@
 import React from "react";
 import logo from "../logo.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
 
 const Navbar = () => {
   return (
-    <div className="container flex justify-between py-8">
-      <img className="w-32" src={logo} alt="logo" />
+    <div className="bg-white flex justify-between py-8">
+      <Link to="/">
+        <img className="w-32" src={logo} alt="logo" />
+      </Link>
 
       <button className="md:hidden">
         <HiMenu className="w-7 h-auto" />
