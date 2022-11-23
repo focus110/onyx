@@ -5,7 +5,7 @@ import { HiMenu } from "react-icons/hi";
 
 const Navbar = () => {
   return (
-    <div className="bg-white flex justify-between py-8">
+    <div className="bg-white flex justify-between items-center p-8 py-8">
       <Link to="/">
         <img className="w-32" src={logo} alt="logo" />
       </Link>
