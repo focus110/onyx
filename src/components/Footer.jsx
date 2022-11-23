@@ -11,23 +11,34 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <div className="pt-16 footer-grd">
+    <div className="pt-16 footer-grd px-4">
       <div className="container flex flex-col">
         <Link to="/" className="order-1">
           <Logo />
         </Link>
-        <div className="block sm:hidden order-2">
-          <Link to="#" className="">
-            <ImTwitter />
+
+        <div className="flex space-x-4 py-4 pt-6 sm:hidden order-2">
+          <Link
+            to="#"
+            className="bg-primary shadow-md p-2 rounded-full text-white"
+          >
+            <ImTwitter className="w-6 h-6" />
           </Link>
-          <Link to="#" className="">
-            <ImFacebook />
+          <Link
+            to="#"
+            className="bg-primary shadow-md p-2 rounded-full text-white"
+          >
+            <ImFacebook className="w-6 h-6" />
           </Link>
-          <Link to="#" className="">
-            <ImInstagram />
+          <Link
+            to="#"
+            className="bg-primary shadow-md p-2 rounded-full text-white"
+          >
+            <ImInstagram className="w-6 h-6" />
           </Link>
         </div>
-        <div className="order-4 sm:order-2 flex flex-col sm:flex-row justify-between items-start py-16 text-white">
+
+        <div className="order-4 sm:order-2 flex flex-col sm:flex-row justify-between items-start py-8 sm:py-16 text-white">
           <div className="">
             <h4 className="text-2xl">Company</h4>
             <ul>
@@ -57,7 +68,8 @@ const Footer = () => {
             <h4 className="text-2xl">Follow us on Social</h4>
           </div>
         </div>
-        <div className="order-3 sm:order-3 flex items-center justify-end space-x-5 pt-4">
+
+        <div className="order-3 sm:order-3 flex items-center sm:justify-end space-x-4 md:space-x-5 pt-4">
           <Link to="#">
             <img className="w-40 md:w-44" src={appleBtn} alt="appleBtn" />
           </Link>
@@ -65,6 +77,7 @@ const Footer = () => {
             <img className="w-40 md:w-44" src={androidBtn} alt="androidBtn" />
           </Link>
         </div>
+
         <p className="order-5 text-white text-center text-xl pt-16 pb-8">
           ©2022 Onyx. All Rights Reserved
         </p>
