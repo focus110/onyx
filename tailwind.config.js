@@ -15,6 +15,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#2B3B30",
+        "primary-dark": "#353935",
         "btn-primary": "#353935",
       },
       backgroundImage: {

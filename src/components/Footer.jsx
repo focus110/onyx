@@ -11,7 +11,7 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <div className="pt-16 footer-grd px-4">
+    <div className="pt-8 sm:pt-16 footer-grd px-4">
       <div className="container flex flex-col">
         <Link to="/" className="order-1">
           <Logo />
@@ -20,52 +20,92 @@ const Footer = () => {
         <div className="flex space-x-4 py-4 pt-6 sm:hidden order-2">
           <Link
             to="#"
-            className="bg-primary shadow-md p-2 rounded-full text-white"
+            className="bg-primary shadow-md p-3 rounded-full text-white"
           >
-            <ImTwitter className="w-6 h-6" />
+            <ImTwitter className="w-5 h-5" />
           </Link>
           <Link
             to="#"
-            className="bg-primary shadow-md p-2 rounded-full text-white"
+            className="bg-primary shadow-md p-3 rounded-full text-white"
           >
-            <ImFacebook className="w-6 h-6" />
+            <ImFacebook className="w-5 h-5" />
           </Link>
           <Link
             to="#"
-            className="bg-primary shadow-md p-2 rounded-full text-white"
+            className="bg-primary shadow-md p-3 rounded-full text-white"
           >
-            <ImInstagram className="w-6 h-6" />
+            <ImInstagram className="w-5 h-5" />
           </Link>
         </div>
 
-        <div className="order-4 sm:order-2 flex flex-col sm:flex-row justify-between items-start py-8 sm:py-16 text-white">
+        <div className="flex flex-col md:flex-row justify-between order-4 sm:order-2 space-y-8 md:space-y-0 py-8 sm:py-16 text-white">
           <div className="">
-            <h4 className="text-2xl">Company</h4>
-            <ul>
-              <li>About Us</li>
-              <li>Careers</li>
+            <h4 className="text-[22px] lg:text-3xl font-semibold pb-2">
+              Company
+            </h4>
+            <ul className="text-[14px] sm:text-[16px] lg:text-[20px] font-semibold sm:font-normal space-y-2">
+              <li>
+                <Link to="#">About Us</Link>
+              </li>
+              <li>
+                <Link to="#">Careers</Link>
+              </li>
             </ul>
           </div>
           <div className="">
-            <h4 className="text-2xl">Legal</h4>{" "}
-            <ul>
-              <li>Privacy policy</li>
-              <li>FAQs</li>
-              <li>Terms of Use</li>
+            <h4 className="text-[22px] lg:text-3xl pb-2">Legal</h4>{" "}
+            <ul className="text-[14px] sm:text-[16px] lg:text-[20px] font-semibold sm:font-normal space-y-2">
+              <li>
+                <Link to="#">Privacy policy</Link>
+              </li>
+              <li>
+                <Link to="#">FAQs</Link>
+              </li>
+              <li>
+                <Link to="#">Terms of Use</Link>
+              </li>
             </ul>
           </div>
           <div className="">
-            <h4 className="text-2xl">Contact</h4>
-            <ul>
+            <h4 className="text-[22px] lg:text-3xl pb-2">Contact</h4>
+            <ul className="text-[14px] sm:text-[16px] lg:text-[20px] font-semibold sm:font-normal space-y-2">
               <li>Address - 253 Muri Okunola Street, </li>
               <li>Victoria Island, Lagos</li>
-              <li>Phone number - 08172247276</li>
+              <li>
+                <span>Phone number</span> -
+                <a href="tel:+2348172247276">+2348172247276</a>
+              </li>
               <li>Victoria Island, Lagos</li>
-              <li>Email address - hello@onyxswap.africa</li>
+              <li>
+                <span>Email address</span> -
+                <a href="mailto:onyx@gmail.com">hello@onyxswap.africa</a>
+              </li>
             </ul>
           </div>
-          <div className="">
-            <h4 className="text-2xl">Follow us on Social</h4>
+          <div className="hidden sm:block">
+            <h4 className="text-[22px] lg:text-3xl pb-2 sm:font-normal space-y-2">
+              Follow us on Social
+            </h4>
+            <ul className="hidden sm:flex space-x-4 py-4 pt-6 order-2">
+              <Link
+                to="#"
+                className="bg-primary shadow-md p-3 rounded-full text-white"
+              >
+                <ImTwitter className="w-5 h-5" />
+              </Link>
+              <Link
+                to="#"
+                className="bg-primary shadow-md p-3 rounded-full text-white"
+              >
+                <ImFacebook className="w-5 h-5" />
+              </Link>
+              <Link
+                to="#"
+                className="bg-primary shadow-md p-3 rounded-full text-white"
+              >
+                <ImInstagram className="w-5 h-5" />
+              </Link>
+            </ul>
           </div>
         </div>
 
@@ -78,7 +118,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        <p className="order-5 text-white text-center text-xl pt-16 pb-8">
+        <p className="order-5 text-white text-center text-[14px] sm:text-xl pt-4 sm:pt-16 pb-8">
           ©2022 Onyx. All Rights Reserved
         </p>
       </div>
