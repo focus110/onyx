@@ -14,3 +14,10 @@
     #2b3b30 105.32%
   );
 }
+
+.inner-shadow {
+  background: rgba(163, 193, 172, 0.62);
+  box-shadow: 0px 4px 7px rgba(53, 57, 53, 0.25),
+    inset 0px 4px 22px rgba(43, 59, 48, 0.25);
+  border-radius: 15px;
+}

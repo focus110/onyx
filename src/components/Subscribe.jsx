@@ -28,7 +28,7 @@ const Subscribe = () => {
       </div>
 
       <div className="hidden md:block container bg-white py-28 text-primary-dark">
-        <div className=" bg-[#A3C1AC] py-16 sm:py-20 space-y-8 sm:space-y-12 px-2 sm:px-16 lg:px-56 rounded-lg text-center">
+        <div className=" inner-shadow py-16 sm:py-20 space-y-8 sm:space-y-12 px-2 sm:px-16 lg:px-56 rounded-lg text-center">
           <h2 className="sm:text-3xl font-semibold">
             Subscribe To Our Newsletter
           </h2>

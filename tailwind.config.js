@@ -17,10 +17,12 @@ module.exports = {
         primary: "#2B3B30",
         "primary-dark": "#353935",
         "btn-primary": "#353935",
+        "onyx-grey": "#F7F7F7",
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/images/hero-pattern.svg')",
-        "footer-texture": "url('/img/footer-texture.png')",
+        "holding-phone": "url('/src/assets/images/holding-phone.png')",
+        "about-abstract": "url('/src/assets/images/abstract-bg.png')",
       },
     },
   },

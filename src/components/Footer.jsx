@@ -1,11 +1,7 @@
 import React from "react";
-import logo from "../logo.svg";
 import { Link } from "react-router-dom";
 import appleBtn from "../assets/images/apple.svg";
 import androidBtn from "../assets/images/android.svg";
-import twitter from "../assets/images/twitter.svg";
-import facebook from "../assets/images/facebook.svg";
-import instagram from "../assets/images/instagram.svg";
 import { ImTwitter, ImFacebook, ImInstagram } from "react-icons/im";
 import Logo from "./Logo";
 
