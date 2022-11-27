@@ -28,7 +28,22 @@ export const service = [
 ];
 
 export const socials = [
-  { name: "Twiiter", icon: <ImTwitter className="w-5 h-5" />, url: "" },
-  { name: "Facebook", icon: <ImFacebook className="w-5 h-5" />, url: "" },
-  { name: "Instagram", icon: <ImInstagram className="w-5 h-5" />, url: "" },
+  {
+    name: "Twiiter",
+    link: "https://twitter.com/onyxswap",
+    icon: <ImTwitter className="w-5 h-5" />,
+    url: "",
+  },
+  {
+    name: "Facebook",
+    link: "/",
+    icon: <ImFacebook className="w-5 h-5" />,
+    url: "",
+  },
+  {
+    name: "Instagram",
+    link: "https://instagram.com/onyxswap",
+    icon: <ImInstagram className="w-5 h-5" />,
+    url: "",
+  },
 ];

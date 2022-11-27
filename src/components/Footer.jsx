@@ -14,24 +14,30 @@ const Footer = () => {
         </Link>
 
         <div className="flex space-x-4 py-4 pt-6 sm:hidden order-2">
-          <Link
-            to="#"
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/onyxswap"
             className="bg-primary shadow-md p-3 rounded-full text-white"
           >
             <ImTwitter className="w-5 h-5" />
-          </Link>
-          <Link
-            to="#"
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="/"
             className="bg-primary shadow-md p-3 rounded-full text-white"
           >
             <ImFacebook className="w-5 h-5" />
-          </Link>
-          <Link
-            to="#"
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://instagram.com/onyxswap"
             className="bg-primary shadow-md p-3 rounded-full text-white"
           >
             <ImInstagram className="w-5 h-5" />
-          </Link>
+          </a>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between order-4 sm:order-2 space-y-8 md:space-y-0 py-8 sm:py-16 text-white">
@@ -83,24 +89,30 @@ const Footer = () => {
               Follow us on Social
             </h4>
             <ul className="hidden sm:flex space-x-4 py-4 pt-6 order-2">
-              <Link
-                to="#"
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/onyxswap"
                 className="bg-primary shadow-md p-3 rounded-full text-white"
               >
                 <ImTwitter className="w-5 h-5" />
-              </Link>
-              <Link
-                to="#"
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="/"
                 className="bg-primary shadow-md p-3 rounded-full text-white"
               >
                 <ImFacebook className="w-5 h-5" />
-              </Link>
-              <Link
-                to="#"
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://instagram.com/onyxswap"
                 className="bg-primary shadow-md p-3 rounded-full text-white"
               >
                 <ImInstagram className="w-5 h-5" />
-              </Link>
+              </a>
             </ul>
           </div>
         </div>

@@ -3,31 +3,32 @@ import DownloadBtn from "./DownloadBtn";
 import iphone from "../assets/images/iphone-mockup.svg";
 import cloud from "../assets/images/cloud.png";
 import vector001 from "../assets/images/vector001.svg";
-import { Link } from "react-router-dom";
 import { socials } from "./Data";
 
 const About = () => {
   return (
-    <div className="relative bg-white md:bg-about-abstract bg-top bg-no-repeat bg-contain overflow-hidden">
+    <div className="relative bg-onyx-grey md:bg-about-abstract bg-top bg-no-repeat bg-contain overflow-hidden">
       {/* py-20 md:py-28 */}
       <div className="container space-y-16 md:space-y-0 md:py-28 flex flex-col md:flex-row items-center h-max">
-        <div className="absolute -bottom-0 left-4 md:bottom-12 md:left-[190px]">
+        <div className="absolute -bottom-0 md:bottom-12 left-4 md:left-16 lg:left-[110px]">
           <ul className="flex flex-col space-y-4 py-4 md:pt-6">
             {socials.map((item, i) => {
               return (
-                <Link
+                <a
                   key={i}
-                  to="#"
+                  target="_blank"
+                  rel="noreferrer"
+                  href={`${item.link.toString()}`}
                   className="bg-primary shadow-md p-1 md:p-2 rounded-full text-white"
                 >
                   {item.icon}
-                </Link>
+                </a>
               );
             })}
           </ul>
         </div>
 
-        <div className="hidden relative flex-1 space-y-6 md:flex flex-col md:-mt-80 px-4">
+        <div className="hidden relative flex-1 space-y-6 md:flex flex-col md:-mt-80 lg:px-4">
           <img
             className="absolute top-8 md:top-12 w-12 md:w-20 -ml-4 opacity-90"
             src={cloud}
