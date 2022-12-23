@@ -15,22 +15,22 @@ const Hero = () => {
       <div className="container text-primary text-center space-y-0 md:space-y-2 items-center">
         <Navbar />
         <img
-          className="absolute w-[75px] sm:w-[10px] lg:w-[241px] top-[440px] md:top-[530px] left-4 sm:left-52"
+          className="fade-in absolute w-[75px] sm:w-[10px] lg:w-[241px] top-[440px] md:top-[530px] left-4 sm:left-52"
           src={vector190}
           alt="vector shape"
         />
         <img
-          className="absolute w-[82px] sm:w-[10px] lg:w-[191px] top-[300px] sm:top-80 left-4 sm:left-80"
+          className="fade-in absolute w-[82px] sm:w-[10px] lg:w-[191px] top-[300px] sm:top-80 left-4 sm:left-80"
           src={vector191}
           alt="vector shape"
         />
         <img
-          className="absolute w-[67px] sm:w-[10px] lg:w-[120px] top-80 sm:top-44 right-2 sm:right-80"
+          className="fade-in absolute w-[67px] sm:w-[10px] lg:w-[120px] top-80 sm:top-44 right-2 sm:right-80"
           src={vector192}
           alt="vector shape"
         />
         <img
-          className="absolute w-[82px] sm:w-[10px] lg:w-[159px] top-[420px] sm:top-96 right-1 sm:right-36"
+          className="fade-in absolute w-[82px] sm:w-[10px] lg:w-[159px] top-[420px] sm:top-96 right-1 sm:right-36"
           src={vector193}
           alt="vector shape"
         />
@@ -56,7 +56,7 @@ const Hero = () => {
             <img className="w-40 md:w-44" src={androidBtn} alt="androidBtn" />
           </Link>
         </div>
-        <div className="relative pt-16 md:pt-16 z-10">
+        <div className="slide-top fade-in relative pt-16 md:pt-16 z-10">
           <img
             className="z-20 w-96 md:w-[1000px] mx-auto"
             src={mobile}

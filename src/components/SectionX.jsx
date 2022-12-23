@@ -4,7 +4,7 @@ import rocket from "../assets/images/rocket.png";
 
 const SectionX = () => {
   return (
-    <div className="md:px-8 lg:container relative hidden md:flex justify-between items-center h-max bg-holding-phone bg-cover bg-center bg-no-repeat">
+    <div className="md:px-8 lg:px-16 relative hidden md:flex justify-between items-center h-max bg-holding-phone bg-cover bg-center bg-no-repeat">
       <div className="flex-1 flex flex-col py-16 md:py-16 justify-center bg-white">
         <div className="mt-20">
           <h2 className="text-4xl font-semibold">Your Gateway To Crypto</h2>

@@ -21,3 +21,55 @@
     inset 0px 4px 22px rgba(43, 59, 48, 0.25);
   border-radius: 15px;
 }
+
+/*===== Animation =====*/
+.fade-in {
+  animation: fade-in 1s ease 0s 1 normal forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide-bottom {
+  animation: side-bottom 1s ease-in 0s normal forwards;
+}
+
+@keyframes side-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+
+.slide-top {
+  animation: slide-top 1s ease 0.4s 1 normal forwards;
+}
+
+@keyframes slide-top {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

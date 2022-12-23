@@ -48,7 +48,7 @@ const About = () => {
         </div>
 
         <div className="md:hidden px-4 space-y-4 ">
-          <h2 className="text-xl font-semibold pb-1">Create Accout</h2>
+          <h2 className="text-xl font-semibold pb-1">Create Account</h2>
           <p>
             Download our mobile application on app store or google play store,
             or open an account via our website and create an account today
