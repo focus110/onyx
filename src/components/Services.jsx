@@ -48,7 +48,12 @@ const Services = () => {
               Buy and sell with Speed!
             </h2>
             <p className="text-center">
-              Buy and sell cryto from company to <br /> user and vice-versa
+              Looking to buy or sell your favourite digital assets with speed
+              and ease? Look no further than Onyxswap. Our platform is designed
+              to make the process of buying and selling crypto quick and
+              hassle-free. With lightning-fast transaction speeds and a
+              user-friendly interface, you can easily buy and sell your
+              preferred coins in a matter of minutes.
             </p>
           </div>
         </div>
@@ -62,7 +67,11 @@ const Services = () => {
             <h2 className="text-center text-xl font-semibold">
               Virtual Dollar cards
             </h2>
-            <p className="text-center">From Naira wallet to Real account</p>
+            <p className="text-center">
+              Onyxswap now offers USD virtual cards, the perfect solution for
+              online shopping and other transactions. Pay your Netflix, Amazon
+              prime and international shopping using your USD card
+            </p>
           </div>
         </div>
 
@@ -76,7 +85,10 @@ const Services = () => {
               Pay Utilities bill at ease
             </h2>
             <p className="text-center">
-              Pay all your utilities bills at the <br /> comfort of your mobile
+              Paying bills has never been easier with Onyxswap's new bills
+              payment feature. With just a few clicks, you can easily pay all of
+              your bills - from DSTV, Airtime & Data Top-up to electricity bills
+              and a lot more - directly from your Onyxswap account.
             </p>
           </div>
         </div>
