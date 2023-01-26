@@ -8,11 +8,15 @@ const SectionX = () => {
       <div className="flex-1 flex flex-col py-16 md:py-16 justify-center bg-white">
         <div className="mt-20">
           <h2 className="text-4xl font-semibold">Your Gateway To Crypto</h2>
-          <p className="font-normal text-base mt-4">
-            More than creating a seamless platform for you to <br /> perform
-            crypto transactions, we are with you every step <br />
-            of the way, providing you with tips and tricks to
-            <br /> becoming a crypto guru
+          <p className="font-normal text-base mt-4 mr-14">
+            If you're new to the world of crypto, don't worry - Onyxswap is
+            designed with beginners in mind. Our intuitive interface and
+            easy-to-use features make it simple for anyone to get started with
+            crypto trading. But don't let our beginner-friendly design fool you
+            - Onyxswap is packed with advanced features for experienced traders
+            as well. Our lightning-fast transaction speeds and customizable
+            portfolio management tools give you the power to make informed
+            trades and stay on top of the market.
           </p>
 
           <img className="md:-ml-8 lg:-ml-24 w-36" src={rocket} alt="rocket" />

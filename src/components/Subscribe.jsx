@@ -33,10 +33,14 @@ const Subscribe = () => {
             Subscribe To Our Newsletter
           </h2>
           <p className="sm:text-[22px]">
-            Apart from a man tripping down the different crypto dips, there's a
-            lot to explore in the Crypto space and we'd love to share that with
-            you. Be it our product update, a new crypto fact, or a random recipe
-            we pasted by accident.
+            Are you tired of missing out on the latest and greatest crypto news
+            and updates? Well, fear not! By subscribing to the Onyxswap
+            newsletter, you'll never be left in the dark again. Our newsletter
+            is chock-full of juicy crypto tidbits, market analysis, and
+            exclusive promotions that you won't find anywhere else. Plus, it's
+            totally free to sign up. So don't delay - join the Onyxswap
+            newsletter family today and start receiving your daily dose of
+            crypto goodness!
           </p>
           <form className="sm:space-x-4 space-y-4 sm:space-y-0">
             <input

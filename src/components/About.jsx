@@ -73,9 +73,14 @@ const About = () => {
             Who we are!
           </h2>
           <p className="slide-left-2 lg:pr-8 xl:pr-72 z-10">
-            Ever imagined crypto being fun as well as functional? Well, we too
-            have, and we have created Patricia to do just that. Come on board
-            and experience crypto the redefined way.
+            We are a team of passionate tech enthusiasts and financial experts
+            who are dedicated to making crypto trading accessible and easy for
+            everyone. Our platform is designed with both beginners and
+            experienced traders in mind, offering a range of features and tools
+            to suit every need. At Onyxswap, we are committed to providing the
+            best user experience possible. That's why we offer lightning-fast
+            transaction speeds, advanced security protocols, and a user-friendly
+            interface.
           </p>
           <button className="slide-left-3 w-max bg-primary-dark text-white rounded-md py-4 px-8">
             Get started for free
