@@ -1,11 +1,42 @@
-import React from "react";
+import React, { useRef } from "react";
 import DownloadBtn from "./DownloadBtn";
 import iphone from "../assets/images/iphone-mockup.svg";
 import cloud from "../assets/images/cloud.png";
 import vector001 from "../assets/images/vector001.svg";
 import { socials } from "./Data";
+import { useInViewport } from "react-in-viewport";
 
 const About = () => {
+  const myRef_1 = useRef();
+  const myRef_2 = useRef();
+  const myRef_3 = useRef();
+  const myRef_social = useRef();
+
+  const view_1 = useInViewport(myRef_1);
+  const view_2 = useInViewport(myRef_2);
+  const view_3 = useInViewport(myRef_3);
+  const view_social = useInViewport(myRef_social);
+
+  let element_1 = document.getElementById("slide-right-1");
+  let element_2 = document.getElementById("slide-right");
+  let element_3 = document.getElementById("slide-left-3");
+  let element_social = document.getElementById("slide-left");
+
+  if (view_1.inViewport) {
+    element_1.classList.add("slide-right-1");
+  }
+
+  if (view_2.inViewport) {
+    element_2.classList.add("slide-right");
+  }
+
+  if (view_3.inViewport) {
+    element_3.classList.add("slide-left-3");
+  }
+
+  if (view_social.inViewport) {
+    element_social.classList.add("slide-left");
+  }
   return (
     <div className="relative bg-onyx-grey md:bg-about-abstract bg-top bg-no-repeat bg-contain overflow-hidden">
       {/* py-20 md:py-28 */}
@@ -15,11 +46,15 @@ const About = () => {
             {socials.map((item, i) => {
               return (
                 <a
+                  ref={myRef_social}
+                  id="slide-left"
                   key={i}
                   target="_blank"
                   rel="noreferrer"
                   href={`${item.link.toString()}`}
-                  className="bg-primary shadow-md p-1 md:p-2 rounded-full text-white"
+                  className={`slide-left-${
+                    i + 1
+                  } bg-primary shadow-md p-1 md:p-2 rounded-full text-white`}
                 >
                   {item.icon}
                 </a>
@@ -34,38 +69,47 @@ const About = () => {
             src={cloud}
             alt="cloud"
           />
-          <h2 className="text-2xl md:text-[45px] font-semibold z-10">
+          <h2 className="slide-left-1 text-2xl md:text-[45px] font-semibold z-10">
             Who we are!
           </h2>
-          <p className="lg:pr-8 xl:pr-72 z-10">
+          <p className="slide-left-2 lg:pr-8 xl:pr-72 z-10">
             Ever imagined crypto being fun as well as functional? Well, we too
             have, and we have created Patricia to do just that. Come on board
             and experience crypto the redefined way.
           </p>
-          <button className="w-max bg-primary-dark text-white rounded-md py-4 px-8">
+          <button className="slide-left-3 w-max bg-primary-dark text-white rounded-md py-4 px-8">
             Get started for free
           </button>
         </div>
 
-        <div className="md:hidden px-4 space-y-4 ">
-          <h2 className="text-xl font-semibold pb-1">Create Account</h2>
-          <p>
-            Download our mobile application on app store or google play store,
-            or open an account via our website and create an account today
-          </p>
-          <button className="w-max bg-primary-dark text-white rounded-md py-2.5 px-6">
-            Get started for free
-          </button>
+        <div ref={myRef_3}>
+          <div
+            id="slide-left-3"
+            className="-translate-x-[500px] md:hidden px-4 space-y-4"
+          >
+            <h2 className="text-xl font-semibold pb-1">Create Account</h2>
+            <p className="">
+              Download our mobile application on app store or google play store,
+              or open an account via our website and create an account today
+            </p>
+            <button className="w-max bg-primary-dark text-white rounded-md py-2.5 px-6">
+              Get started for free
+            </button>
+          </div>
         </div>
 
         <div className="w-full relative flex-1 pb-0 md:pb-0">
           <img
+            ref={myRef_1}
+            id="slide-right-1"
             className="absolute left-12 top-[290px] md:top-96 md:-mb-36 md:w-80 w-60"
             src={vector001}
             alt=""
           />
           <img
-            className="mx-auto z-10 -rotate-6 w-52 md:w-72 md:ml-24"
+            ref={myRef_2}
+            id="slide-right"
+            className="mx-auto z-10 -rotate-6 translate-x-[50px] w-52 md:w-72 md:ml-24"
             src={iphone}
             alt=""
           />

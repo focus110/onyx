@@ -8,10 +8,12 @@ const SectionXx = () => {
         return (
           <div
             key={i}
-            className="flex flex-col space-y-4 px-4 sm:px-28 py-8 border-b"
+            className={`slide-bottom-${
+              i + 1
+            } flex flex-col space-y-4 px-4 sm:px-28 py-8 border-b`}
           >
             {item.icon}
-            <h2 className="font-semibold text-xl">{item.title}</h2>
+            <h2 className={`font-semibold text-xl`}>{item.title}</h2>
             <p>{item.desc}</p>
           </div>
         );

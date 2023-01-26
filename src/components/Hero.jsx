@@ -34,19 +34,30 @@ const Hero = () => {
           src={vector193}
           alt="vector shape"
         />
-        <h2 className="hidden md:block font-black text-xl sm:text-4xl mx-auto leading-[28px] md:leading-[40px] pt-24 md:pt-28">
+        {/* old text */}
+        {/* <h2 className="hidden md:block font-black text-xl sm:text-4xl mx-auto leading-[28px] md:leading-[40px] pt-24 md:pt-28">
           Onyxswap is the easiest and fastest <br />
           place to buy, sell and hold <br />
           cryptocurrency.
+        </h2> */}
+
+        <h2 className="hidden md:block font-black text-xl sm:text-4xl mx-auto leading-[28px] md:leading-[40px] pt-24 md:pt-28">
+          Welcome to Onyxswap, the simple cryptocurrency <br />
+          ptrading app for selling your Bitcoin, Ethereum and <br />
+          Stablecoins for Naira.
         </h2>
 
         <h2 className="md:hidden font-black text-xl sm:text-4xl mx-auto leading-[28px] md:leading-[40px] pt-24 md:pt-28">
-          Onyxswap is the easiest and <br /> fastest place to buy, sell and{" "}
-          <br /> hold cryptocurrency.
+          Welcome to Onyxswap, the simple <br />
+          cryptocurrency ptrading app for <br />
+          selling your Bitcoin, Ethereum and Stablecoins for Naira.
         </h2>
 
         <p className="text-base md:text-[22px] p-4 px-12 sm:px-4 font-normal">
-          Sign up and trade for free at the best rates everyday
+          Join the thousands of users already enjoying the benefits of Onyxswap{" "}
+          <br />
+          fastest place to buy, sell and Sign up today and start your
+          <br /> crypto journey!.
         </p>
         <div className="space-x-5 flex items-center justify-center pt-4">
           <Link to="#">
